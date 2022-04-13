@@ -1,19 +1,22 @@
+
+
+
 <nav class="navbar navbar-dark bg-primary">
     <a class="navbar-brand" href="/">
         ㅤSensores 
      </a>
    </nav>
 
-    <!--AQUI SON LOS BOTONES Y REGISTRO DE SENSORES -->
+   <!--AQUI SON LOS BOTONES Y REGISTRO DE SENSORES -->
    <div class="container" >
-    <form [formGroup]="FormularioRegistro" >
+    <form  >
       <div>
   
           <label  class="form-label" >Sensor</label>
-          <input type="text" class="form-control"  formControlName="Nombre_Sesor" [(ngModel)]="sensor.Nombre" >
+          <input type="text" class="form-control"  formControlName="Nombre_Sesor" >
           </div>
           <br>
-              <button (click)="crearSensor()" (click)="showModal()" class="btn btn-primary">Guardar</button>
+              <button class="btn btn-primary">Guardar</button>
               <p> </p>
               <a  class="btn btn-danger" routerLink="/administrador">Cancelar</a>
       </form>
@@ -28,9 +31,9 @@
               </tr>
             </thead>
             <tbody>
-              <tr *ngFor="let sensor of sensores">
-                <td>{{sensor.Nombre}}</td>
-              </tr>
+               <!-- <tr *ngFor="let sensor of sensores">
+              <td>{{sensor.Nombre}}</td> 
+              </tr>-->
             </tbody>
           </table>
         </div>

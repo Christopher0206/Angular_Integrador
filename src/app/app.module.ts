@@ -9,6 +9,8 @@ import { SensoresComponent } from './Vistas/sensores/sensores.component';
 import { SidebarComponent } from './Vistas/sidebar/sidebar.component';
 import { LoginComponent } from './Auth/login/login.component';
 import { RegistroUserComponent } from './Auth/registro-user/registro-user.component';
+import { DocumentacionComponent } from './Vistas/documentacion/documentacion.component';
+import { GraficasComponent } from './Vistas/graficas/graficas.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { RegistroUserComponent } from './Auth/registro-user/registro-user.compon
     SensoresComponent,
     SidebarComponent,
     LoginComponent,
-    RegistroUserComponent
+    RegistroUserComponent,
+    DocumentacionComponent,
+    GraficasComponent
   ],
   imports: [
     BrowserModule,
