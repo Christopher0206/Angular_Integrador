@@ -1,13 +1,9 @@
-import { ServiceService } from 'src/app/service.service';
+import { Sensor } from 'src/app/models/sensor';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { ServiceService } from 'src/app/service.service';
 import { interval } from 'rxjs';
-import { Sensor } from 'src/app/models/sensor';
 import Swal from 'sweetalert';
-
-
-
-
 
 
 @Component({
@@ -18,15 +14,12 @@ import Swal from 'sweetalert';
 export class SensoresComponent implements OnInit {
 
 
-  
   sensor:Sensor= {
     "id":'',
     "Nombre":''
   }
-
-
   sensores:Sensor[]|undefined
-  FormularioRegistro= new FormGroup({
+  FormularioRegistro = new FormGroup({
     Nombre_Sensor: new  FormControl(null,[Validators.required])
   })
 
@@ -39,8 +32,6 @@ export class SensoresComponent implements OnInit {
    })
  }
 
-
- 
  showModal(){
   if(this.FormularioRegistro.valid){
     Swal({
@@ -62,7 +53,6 @@ crearSensor(){
     this.sensor=data
  })
 }
-
   ngOnInit(): void {
   }
   
