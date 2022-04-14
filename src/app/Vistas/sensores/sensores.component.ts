@@ -1,7 +1,8 @@
+import { ServiceService } from './../../service.service';
 import { Sensor } from 'src/app/models/sensor';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { ServiceService } from 'src/app/service.service';
+
 import { interval } from 'rxjs';
 import Swal from 'sweetalert';
 
@@ -53,6 +54,7 @@ crearSensor(){
     this.sensor=data
  })
 }
+
   ngOnInit(): void {
   }
   
