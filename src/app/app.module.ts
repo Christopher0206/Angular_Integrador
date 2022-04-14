@@ -31,7 +31,7 @@ import { AdministradorComponent } from './administrador/administrador.component'
     ReactiveFormsModule,
     AppRoutingModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
