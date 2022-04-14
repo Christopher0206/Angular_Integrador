@@ -11,6 +11,7 @@ import { LoginComponent } from './Auth/login/login.component';
 import { RegistroUserComponent } from './Auth/registro-user/registro-user.component';
 import { DocumentacionComponent } from './Vistas/documentacion/documentacion.component';
 import { GraficasComponent } from './Vistas/graficas/graficas.component';
+import { AdministradorComponent } from './administrador/administrador.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { GraficasComponent } from './Vistas/graficas/graficas.component';
     LoginComponent,
     RegistroUserComponent,
     DocumentacionComponent,
-    GraficasComponent
+    GraficasComponent,
+    AdministradorComponent
   ],
   imports: [
     BrowserModule,
