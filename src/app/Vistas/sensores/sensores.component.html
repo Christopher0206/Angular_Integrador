@@ -9,14 +9,14 @@
 
    <!--AQUI SON LOS BOTONES Y REGISTRO DE SENSORES -->
    <div class="container" >
-    <form  >
+    <form [formGroup]="FormularioRegistro" >
       <div>
   
           <label  class="form-label" >Sensor</label>
-          <input type="text" class="form-control"  formControlName="Nombre_Sesor" >
+          <input type="text" class="form-control"  formControlName="Nombre_Sensor" [(ngModel)]="sensor.Nombre" >
           </div>
           <br>
-              <button class="btn btn-primary">Guardar</button>
+              <button (click)="crearSensor()" (click)="showModal()" class="btn btn-primary">Guardar</button>
               <p> </p>
               <a  class="btn btn-danger" routerLink="/administrador">Cancelar</a>
       </form>
@@ -31,9 +31,9 @@
               </tr>
             </thead>
             <tbody>
-               <!-- <tr *ngFor="let sensor of sensores">
+                <tr *ngFor="let sensor of sensores">
               <td>{{sensor.Nombre}}</td> 
-              </tr>-->
+              </tr>
             </tbody>
           </table>
         </div>
